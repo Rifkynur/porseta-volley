@@ -1,12 +1,12 @@
-import { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 import Logo from "../../assets/home/logo.png";
+import Icon from "../../assets/home/icon.jpg";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const menuRef = useRef(null);
-  const navbarRef = useRef(null);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -22,25 +22,15 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (navbarRef.current && menuRef.current && event.target instanceof Node && !navbarRef.current.contains(event.target) && !menuRef.current.contains(event.target)) {
-        setNavbarOpen(false);
-      }
-    };
-
-    window.addEventListener("click", handleOutsideClick);
-    return () => {
-      window.removeEventListener("click", handleOutsideClick);
-    };
-  }, []);
   return (
     <nav className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-primary p-4 text-white shadow-lg md:px-10 md:py-8">
-      <div className="flex items-center">
-        <img src={Logo} alt="logo" className="mr-2 size-10 lg:size-12" />
-        <h2 className="text-lg font-bold uppercase">porseta</h2>
-      </div>
-      <motion.button initial={false} className="relative size-10 rounded-full bg-secondary md:hidden" animate={navbarOpen ? "open" : "closed"} onClick={() => setNavbarOpen((prev) => !prev)} ref={menuRef}>
+      <Link to={"/"}>
+        <div className="flex cursor-pointer items-center">
+          <img src={Icon} alt="logo" className="mr-2 size-10 rounded-full lg:size-12" />
+          <h2 className="text-lg font-bold uppercase">porseta</h2>
+        </div>
+      </Link>
+      <motion.button initial={false} className="relative size-10 rounded-full bg-secondary md:hidden" animate={navbarOpen ? "open" : "closed"} onClick={() => setNavbarOpen((prev) => !prev)}>
         <motion.span
           style={{
             left: "50%",
@@ -136,7 +126,6 @@ const Navbar = () => {
             },
           },
         }}
-        ref={navbarRef}
       >
         <li>
           <NavLink to={"/"} className={"lg:text-lg"}>

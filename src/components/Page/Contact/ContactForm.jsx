@@ -5,7 +5,7 @@ import Button from "../../global/Button";
 const ContactForm = () => {
   return (
     <div className="w-full text-white md:max-w-xl">
-      <h1 className="text-center font-bold lg:text-2xl">Contact Form</h1>
+      <h1 className="text-center text-xl font-bold lg:text-2xl">Contact Form</h1>
       <form className="flex flex-col gap-4 py-8 lg:gap-8">
         <div className="flex flex-col gap-2">
           <label>Name</label>

@@ -24,18 +24,30 @@ import detail10 from "../../assets/detailPlayer/detail10.png";
 import detail11 from "../../assets/detailPlayer/detail11.png";
 import detail12 from "../../assets/detailPlayer/detail12.png";
 
-import coba from "../../assets/detailPlayer/coba.png";
-import coba2 from "../../assets/detailPlayer/coba2.png";
-import coba4 from "../../assets/detailPlayer/coba4.png";
+import real1 from "../../assets/detailPlayer/real1.png";
+import real2 from "../../assets/detailPlayer/real2.png";
+import real3 from "../../assets/detailPlayer/real3.png";
+import real4 from "../../assets/detailPlayer/real4.png";
+import real5 from "../../assets/detailPlayer/real5.png";
+import real10 from "../../assets/detailPlayer/real10.png";
+import real12 from "../../assets/detailPlayer/real12.png";
+
+import half1 from "../../assets/detailPlayer/half1.png";
+import half2 from "../../assets/detailPlayer/half2.png";
+import half3 from "../../assets/detailPlayer/half3.png";
+import half4 from "../../assets/detailPlayer/half4.png";
+import half5 from "../../assets/detailPlayer/half5.png";
+import half10 from "../../assets/detailPlayer/half10.png";
+import half12 from "../../assets/detailPlayer/half12.png";
 
 export const players = [
   {
     id: 1,
-    name: "Septi Aji",
-    firstName: "Septi  ",
-    lastName: "Aji Sasongko",
-    img: img2,
-    detailImg: detail2,
+    name: "Rizal Saputra",
+    firstName: "Rizal",
+    lastName: "Ahmad Saputra",
+    img: half1,
+    detailImg: real1,
     number: "1",
     position: "Captain, wing spiker (ws)",
     height: "176.8 cm",
@@ -44,11 +56,11 @@ export const players = [
   },
   {
     id: 2,
-    name: "Muhammad Sanjaya",
-    firstName: "Muhammad",
-    lastName: "Sanjaya",
-    img: img1,
-    detailImg: detail1,
+    name: "Erik Beruk",
+    firstName: "Erik",
+    lastName: "Beruk",
+    img: half2,
+    detailImg: real2,
     number: "2",
     position: "Setter",
     height: "174.3 cm",
@@ -57,11 +69,11 @@ export const players = [
   },
   {
     id: 3,
-    name: "Ahmad Mustofa",
-    firstName: "Ahmad",
-    lastName: "Mustofa",
-    img: img3,
-    detailImg: detail3,
+    name: "Aji Nurrahman",
+    firstName: "Aji",
+    lastName: "Nurrahman",
+    img: half3,
+    detailImg: real3,
     number: "3",
     position: "wing spiker (ws)",
     height: "184.7 cm",
@@ -70,11 +82,11 @@ export const players = [
   },
   {
     id: 4,
-    name: "Wanto Suloyo",
-    firstName: "Wanto",
-    lastName: "Suloyo",
-    img: img4,
-    detailImg: detail4,
+    name: "Haris wicaksono",
+    firstName: "Haris",
+    lastName: "Wicaksono",
+    img: half4,
+    detailImg: real4,
     number: "4",
     position: "libero (l) ",
     height: "159 cm",
@@ -83,11 +95,11 @@ export const players = [
   },
   {
     id: 5,
-    name: "Joko Rahmat S.",
-    firstName: "Joko",
-    lastName: "Rahmat Sasongko",
-    img: img5,
-    detailImg: detail5,
+    name: "Asri Kurniawan",
+    firstName: "Asri",
+    lastName: "Kurniawan",
+    img: half5,
+    detailImg: real5,
     number: "5",
     position: "wing spiker (ws) ",
     height: "177.2 cm",
@@ -148,11 +160,11 @@ export const players = [
   },
   {
     id: 10,
-    name: "Nanda Suherman",
-    firstName: "Nanda",
-    lastName: "Suherman",
-    img: img10,
-    detailImg: detail10,
+    name: "Endar Nugroho",
+    firstName: "Endar",
+    lastName: "Nugroho",
+    img: half10,
+    detailImg: real10,
     number: "10",
     position: "middle blocker (mb)  ",
     height: "162.8 cm",
@@ -174,11 +186,11 @@ export const players = [
   },
   {
     id: 12,
-    name: "Ahmad Prabowo",
-    firstName: "Ahmad",
-    lastName: "Prabowo",
-    img: img12,
-    detailImg: detail12,
+    name: "Dimas Hermansyah",
+    firstName: "Dimas",
+    lastName: "Hermansyah",
+    img: half12,
+    detailImg: real12,
     number: "12",
     position: "middle blocker (mb)  ",
     height: "179.5 cm",

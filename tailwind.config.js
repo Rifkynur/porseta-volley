@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#2b2e4d",
         secondary: "#f98d4d",
+        colorText: "#fff",
       },
       fontFamily: {
         roboto: ["Roboto Slab", "serif"],
