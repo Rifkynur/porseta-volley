@@ -29,6 +29,9 @@ import real2 from "../../assets/detailPlayer/real2.png";
 import real3 from "../../assets/detailPlayer/real3.png";
 import real4 from "../../assets/detailPlayer/real4.png";
 import real5 from "../../assets/detailPlayer/real5.png";
+import real7 from "../../assets/detailPlayer/real7.png";
+import real8 from "../../assets/detailPlayer/real8.png";
+import real9 from "../../assets/detailPlayer/real9.png";
 import real10 from "../../assets/detailPlayer/real10.png";
 import real12 from "../../assets/detailPlayer/real12.png";
 
@@ -37,6 +40,9 @@ import half2 from "../../assets/detailPlayer/half2.png";
 import half3 from "../../assets/detailPlayer/half3.png";
 import half4 from "../../assets/detailPlayer/half4.png";
 import half5 from "../../assets/detailPlayer/half5.png";
+import half7 from "../../assets/detailPlayer/half7.png";
+import half8 from "../../assets/detailPlayer/half8.png";
+import half9 from "../../assets/detailPlayer/half9.png";
 import half10 from "../../assets/detailPlayer/half10.png";
 import half12 from "../../assets/detailPlayer/half12.png";
 
@@ -121,11 +127,11 @@ export const players = [
   },
   {
     id: 7,
-    name: "Rahmat Rakuat",
-    firstName: "Rahmat",
-    lastName: "Rakuat",
-    img: img7,
-    detailImg: detail7,
+    name: "Muhammad Angger",
+    firstName: "Muhammad",
+    lastName: "Angger",
+    img: half7,
+    detailImg: real7,
     number: "7",
     position: "wing spiker (ws)  ",
     height: "174.7 cm",
@@ -134,11 +140,11 @@ export const players = [
   },
   {
     id: 8,
-    name: "Purwanto",
-    firstName: "Purwanto",
-    lastName: "",
-    img: img8,
-    detailImg: detail8,
+    name: "Irfan Ariyanto",
+    firstName: "Irfan",
+    lastName: "Ariyanto",
+    img: half8,
+    detailImg: real8,
     number: "8",
     position: "middle blocker (mb)  ",
     height: "180.2 cm",
@@ -147,11 +153,11 @@ export const players = [
   },
   {
     id: 9,
-    name: "Tony Ridwan",
-    firstName: "Tony",
-    lastName: "Ridwan",
-    img: img9,
-    detailImg: detail9,
+    name: "Yosua Cahyono",
+    firstName: "Yosua",
+    lastName: "Cahyono",
+    img: half9,
+    detailImg: real9,
     number: "9",
     position: "setter (s)  ",
     height: "180.6 cm",
@@ -186,9 +192,9 @@ export const players = [
   },
   {
     id: 12,
-    name: "Dimas Hermansyah",
-    firstName: "Dimas",
-    lastName: "Hermansyah",
+    name: "Kulik Sulaksono",
+    firstName: "Kulik",
+    lastName: "Sulaksono",
     img: half12,
     detailImg: real12,
     number: "12",
