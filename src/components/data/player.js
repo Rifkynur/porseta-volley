@@ -1,50 +1,30 @@
-import img1 from "../../assets/players/1.png";
-import img2 from "../../assets/players/2.png";
-import img3 from "../../assets/players/3.png";
-import img4 from "../../assets/players/4.png";
-import img5 from "../../assets/players/5.png";
-import img6 from "../../assets/players/6.png";
-import img7 from "../../assets/players/7.png";
-import img8 from "../../assets/players/8.png";
-import img9 from "../../assets/players/9.png";
-import img10 from "../../assets/players/10.png";
-import img11 from "../../assets/players/11.png";
-import img12 from "../../assets/players/12.png";
-
-import detail1 from "../../assets/detailPlayer/detail1.png";
-import detail2 from "../../assets/detailPlayer/detail2.png";
-import detail3 from "../../assets/detailPlayer/detail3.png";
-import detail4 from "../../assets/detailPlayer/detail4.png";
-import detail5 from "../../assets/detailPlayer/detail5.png";
-import detail6 from "../../assets/detailPlayer/detail6.png";
-import detail7 from "../../assets/detailPlayer/detail7.png";
-import detail8 from "../../assets/detailPlayer/detail8.png";
-import detail9 from "../../assets/detailPlayer/detail9.png";
-import detail10 from "../../assets/detailPlayer/detail10.png";
-import detail11 from "../../assets/detailPlayer/detail11.png";
-import detail12 from "../../assets/detailPlayer/detail12.png";
-
 import real1 from "../../assets/detailPlayer/real1.png";
 import real2 from "../../assets/detailPlayer/real2.png";
 import real3 from "../../assets/detailPlayer/real3.png";
 import real4 from "../../assets/detailPlayer/real4.png";
 import real5 from "../../assets/detailPlayer/real5.png";
+import real6 from "../../assets/detailPlayer/real6.png";
 import real7 from "../../assets/detailPlayer/real7.png";
 import real8 from "../../assets/detailPlayer/real8.png";
 import real9 from "../../assets/detailPlayer/real9.png";
 import real10 from "../../assets/detailPlayer/real10.png";
+import real11 from "../../assets/detailPlayer/real11.png";
 import real12 from "../../assets/detailPlayer/real12.png";
+import real14 from "../../assets/detailPlayer/real14.png";
 
 import half1 from "../../assets/detailPlayer/half1.png";
 import half2 from "../../assets/detailPlayer/half2.png";
 import half3 from "../../assets/detailPlayer/half3.png";
 import half4 from "../../assets/detailPlayer/half4.png";
 import half5 from "../../assets/detailPlayer/half5.png";
+import half6 from "../../assets/detailPlayer/half6.png";
 import half7 from "../../assets/detailPlayer/half7.png";
 import half8 from "../../assets/detailPlayer/half8.png";
 import half9 from "../../assets/detailPlayer/half9.png";
 import half10 from "../../assets/detailPlayer/half10.png";
+import half11 from "../../assets/detailPlayer/half11.png";
 import half12 from "../../assets/detailPlayer/half12.png";
+import half14 from "../../assets/detailPlayer/half14.png";
 
 export const players = [
   {
@@ -62,9 +42,9 @@ export const players = [
   },
   {
     id: 2,
-    name: "Erik Beruk",
-    firstName: "Erik",
-    lastName: "Beruk",
+    name: "Bagas Ramdani",
+    firstName: "Bagas",
+    lastName: "Ramdani",
     img: half2,
     detailImg: real2,
     number: "2",
@@ -114,11 +94,11 @@ export const players = [
   },
   {
     id: 6,
-    name: "Tommy Humandri",
-    firstName: "Tommy",
-    lastName: "Humandri",
-    img: img6,
-    detailImg: detail6,
+    name: "Agus Setyawan",
+    firstName: "Agus",
+    lastName: "Setyawan",
+    img: half6,
+    detailImg: real6,
     number: "6",
     position: "wing spiker (ws)  ",
     height: "175.4 cm",
@@ -127,8 +107,8 @@ export const players = [
   },
   {
     id: 7,
-    name: "Muhammad Angger",
-    firstName: "Muhammad",
+    name: "Mahesha Angger",
+    firstName: "Mahesha",
     lastName: "Angger",
     img: half7,
     detailImg: real7,
@@ -179,11 +159,11 @@ export const players = [
   },
   {
     id: 11,
-    name: "Thoriq Kusnadi",
-    firstName: "Thoriq",
-    lastName: "Kusnadi",
-    img: img11,
-    detailImg: detail11,
+    name: "Alfian Priasbudi",
+    firstName: "Alfian",
+    lastName: "Priasbudi",
+    img: half11,
+    detailImg: real11,
     number: "11",
     position: "middle blocker (mb)  ",
     height: "188.3 cm",
@@ -198,6 +178,19 @@ export const players = [
     img: half12,
     detailImg: real12,
     number: "12",
+    position: "middle blocker (mb)  ",
+    height: "179.5 cm",
+    weight: "63 kg",
+    dob: "november 10",
+  },
+  {
+    id: 14,
+    name: "Andika Kenyik",
+    firstName: "Andika",
+    lastName: "Kenyik",
+    img: half14,
+    detailImg: real14,
+    number: "14",
     position: "middle blocker (mb)  ",
     height: "179.5 cm",
     weight: "63 kg",

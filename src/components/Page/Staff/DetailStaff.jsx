@@ -3,10 +3,11 @@ import { players } from "../../data/player";
 import { useParams } from "react-router-dom";
 import { FaInstagram, FaTiktok, FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { staff } from "../../data/staff";
 
-const Detailplayer = () => {
+const DetailStaff = () => {
   const { id } = useParams();
-  const filteredData = players.filter((item) => item.id === Number(id));
+  const filteredData = staff.filter((item) => item.id === Number(id));
 
   return (
     <>
@@ -14,7 +15,6 @@ const Detailplayer = () => {
         return (
           <div className="flex flex-col md:flex-row" key={data.id}>
             <div className="relative flex h-64 items-center justify-end bg-secondary md:h-screen md:w-[35%] md:justify-start">
-              <p className="text-colorText mt-8 px-2 font-fjalla text-9xl text-shadow-md md:px-0 md:text-[150px] lg:px-8 lg:text-[200px]">{data.number}</p>
               <img src={data.detailImg} alt="img" className="absolute right-[50%] top-[50%] h-[500px] w-[50%] translate-x-[-10%] object-contain md:right-[-60%] md:w-full md:translate-y-[-50%] lg:right-[-50%] lg:top-[60%] lg:h-[450px] lg:object-contain" />
             </div>
             <div className="md:ps- flex h-full flex-col gap-4 py-8 ps-44 md:h-screen md:w-full md:justify-center">
@@ -51,4 +51,4 @@ const Detailplayer = () => {
   );
 };
 
-export default Detailplayer;
+export default DetailStaff;
