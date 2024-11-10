@@ -7,8 +7,6 @@ const Gallery = () => {
   const [singleImg, setSingleImg] = useState(null);
   const [visible, setVisible] = useState(false);
 
-  console.log(singleImg);
-
   const chooseImg = (data) => {
     setVisible(true);
     setSingleImg(data);
