@@ -1,25 +1,29 @@
-import React from "react";
-import { players } from "../../data/player";
-import Corner from "../../../assets/home/corner.png";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import FutsalPlayer from "./FutsalPlayer";
+import VoliPlayer from "./VoliPlayer";
 
 const AllPlayer = () => {
+  const [activeTabs, setActiveTabs] = useState(1);
+
+  const chooseSport = (number) => {
+    setActiveTabs(number);
+  };
   return (
     <>
-      <h1 className="text-shad relative z-10 mt-8 text-center text-xl font-bold bg-blend-color text-shadow lg:text-4xl">Meet Out players</h1>
-      <img src={Corner} alt="corner" className="absolute left-0 top-0 z-0" />
-      <div className="relative z-10 mt-8 grid grid-cols-2 gap-2 md:grid-cols-3 lg:gap-y-12">
-        {players.map((item) => {
-          return (
-            <div key={item.id}>
-              <Link className="flex flex-col items-center gap-2 lg:gap-4" to={`/player/${item.id}`}>
-                <img src={item.img} className="h-40 object-cover lg:h-[250px]" />
-                <h2 className="text-colorText font-semibold text-shadow-md lg:text-lg">{item.name}</h2>
-              </Link>
-            </div>
-          );
-        })}
+      <h1 className="text-shad relative z-10 mt-8 text-center text-xl font-bold bg-blend-color text-shadow lg:text-4xl">Meet Our players</h1>
+      <div className="flex w-full items-center border-b py-2 pt-8">
+        <button className={`rounded-md px-3 py-1 text-sm font-bold ${activeTabs === 1 ? "text-secondary" : "text-white"}`} onClick={() => setActiveTabs(1)}>
+          Voli
+        </button>
+        <button className={`rounded-md px-3 py-1 text-sm font-bold ${activeTabs === 2 ? "text-secondary" : "text-white"}`} onClick={() => setActiveTabs(2)}>
+          Futsal
+        </button>
+        <button className={`rounded-md px-3 py-1 text-sm font-bold ${activeTabs === 3 ? "text-secondary" : "text-white"}`} onClick={() => setActiveTabs(3)}>
+          Badminton
+        </button>
       </div>
+      {activeTabs === 1 && <VoliPlayer />}
+      {activeTabs === 2 && <FutsalPlayer />}
     </>
   );
 };

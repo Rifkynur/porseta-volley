@@ -103,7 +103,7 @@ const Navbar = () => {
       </motion.button>
 
       <motion.ul
-        className={`absolute left-0 top-full flex w-full origin-top flex-col items-center justify-center gap-4 overflow-hidden bg-primary font-semibold md:relative md:h-fit md:w-fit md:flex-row md:opacity-100 lg:gap-10`}
+        className={`absolute left-0 top-full flex w-full origin-top flex-col items-center justify-center gap-4 overflow-hidden bg-primary font-semibold md:relative md:h-fit md:w-fit md:flex-row md:opacity-100 lg:gap-6`}
         animate={navbarOpen ? "open" : "closed"}
         variants={{
           open: {
@@ -132,6 +132,16 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
+        {/* <li>
+          <NavLink to={"/"} className={"lg:text-lg"}>
+            Tentang
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/"} className={"lg:text-lg"}>
+            Blog
+          </NavLink>
+        </li> */}
         <li>
           <NavLink to={"/gallery"} className={"lg:text-lg"}>
             Gallery

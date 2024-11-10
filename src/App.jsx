@@ -8,6 +8,7 @@ import StaffPage from "./Pages/StaffPage";
 import PlayersPage from "./Pages/PlayersPage";
 import DetailPlayerPage from "./Pages/DetailPlayerPage";
 import DetailStaffPage from "./Pages/DetailStaffPage";
+import DetailFutsalPlayerPage from "./Pages/DetailFutsalPlayerPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/staff/:id" element={<DetailStaffPage />} />
         <Route path="/player" element={<PlayersPage />} />
         <Route path="/player/:id" element={<DetailPlayerPage />} />
+        <Route path="/player/futsal/:id" element={<DetailFutsalPlayerPage />} />
       </Routes>
     </>
   );

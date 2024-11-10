@@ -7,7 +7,7 @@ import { staff } from "../../data/staff";
 const AllStaff = () => {
   return (
     <>
-      <h1 className="text-shad relative z-10 mt-8 text-center text-xl font-bold bg-blend-color text-shadow lg:text-4xl">Meet Out Staff</h1>
+      <h1 className="text-shad relative z-10 mt-8 text-center text-xl font-bold bg-blend-color text-shadow lg:text-4xl">Meet Our Staff</h1>
       <img src={Corner} alt="corner" className="absolute left-0 top-0 z-0" />
       <div className="relative z-10 mt-8 grid grid-cols-2 gap-2 md:grid-cols-3 lg:gap-y-12">
         {staff.map((item) => {
