@@ -9,6 +9,7 @@ import PlayersPage from "./Pages/PlayersPage";
 import DetailPlayerPage from "./Pages/DetailPlayerPage";
 import DetailStaffPage from "./Pages/DetailStaffPage";
 import DetailFutsalPlayerPage from "./Pages/DetailFutsalPlayerPage";
+import AboutPage from "./Pages/AboutPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/staff" element={<StaffPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/staff/:id" element={<DetailStaffPage />} />
         <Route path="/player" element={<PlayersPage />} />
         <Route path="/player/:id" element={<DetailPlayerPage />} />

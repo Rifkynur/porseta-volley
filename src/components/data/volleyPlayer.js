@@ -12,21 +12,21 @@ import real11 from "../../assets/detailPlayer/real11.png";
 import real12 from "../../assets/detailPlayer/real12.png";
 import real14 from "../../assets/detailPlayer/real14.png";
 
-import half1 from "../../assets/detailPlayer/half1.png";
-import half2 from "../../assets/detailPlayer/half2.png";
-import half3 from "../../assets/detailPlayer/half3.png";
-import half4 from "../../assets/detailPlayer/half4.png";
-import half5 from "../../assets/detailPlayer/half5.png";
-import half6 from "../../assets/detailPlayer/half6.png";
-import half7 from "../../assets/detailPlayer/half7.png";
-import half8 from "../../assets/detailPlayer/half8.png";
-import half9 from "../../assets/detailPlayer/half9.png";
-import half10 from "../../assets/detailPlayer/half10.png";
-import half11 from "../../assets/detailPlayer/half11.png";
-import half12 from "../../assets/detailPlayer/half12.png";
-import half14 from "../../assets/detailPlayer/half14.png";
+import half1 from "../../assets/volleyPlayer/half1.webp";
+import half2 from "../../assets/volleyPlayer/half2.webp";
+import half3 from "../../assets/volleyPlayer/half3.webp";
+import half4 from "../../assets/volleyPlayer/half4.webp";
+import half5 from "../../assets/volleyPlayer/half5.webp";
+import half6 from "../../assets/volleyPlayer/half6.webp";
+import half7 from "../../assets/volleyPlayer/half7.webp";
+import half8 from "../../assets/volleyPlayer/half8.webp";
+import half9 from "../../assets/volleyPlayer/half9.webp";
+import half10 from "../../assets/volleyPlayer/half10.webp";
+import half11 from "../../assets/volleyPlayer/half11.webp";
+import half12 from "../../assets/volleyPlayer/half12.webp";
+import half14 from "../../assets/volleyPlayer/half14.webp";
 
-export const players = [
+export const volleyPlayers = [
   {
     id: 1,
     name: "Rizal Saputra",
@@ -39,6 +39,7 @@ export const players = [
     height: "176.8 cm",
     weight: "70.1 kg",
     dob: "december 31",
+    instagram: "https://www.instagram.com/rizalas92?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ export const players = [
     height: "174.3 cm",
     weight: "63.5 kg",
     dob: "june 13",
+    instagram: "https://www.instagram.com/raflibagas_77?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 3,
@@ -65,6 +67,7 @@ export const players = [
     height: "184.7 cm",
     weight: "75.2 kg",
     dob: "january 1",
+    instagram: "https://www.instagram.com/aji_nurrohman2134?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 4,
@@ -78,6 +81,7 @@ export const players = [
     height: "159 cm",
     weight: "51.1 kg",
     dob: "october 10",
+    instagram: "https://www.instagram.com/hariswisaksono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 5,
@@ -91,6 +95,7 @@ export const players = [
     height: "177.2 cm",
     weight: "68.8 kg",
     dob: "march 3",
+    instagram: "https://www.instagram.com/asrikurrr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 6,
@@ -104,6 +109,7 @@ export const players = [
     height: "175.4 cm",
     weight: "66.4 kg",
     dob: "december 26",
+    instagram: "https://www.instagram.com/agus_setyawan2408?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 7,
@@ -117,6 +123,7 @@ export const players = [
     height: "174.7 cm",
     weight: "65.5 kg",
     dob: "february 15",
+    instagram: "",
   },
   {
     id: 8,
@@ -130,6 +137,7 @@ export const players = [
     height: "180.2 cm",
     weight: "70.2 kg",
     dob: "august 17",
+    instagram: "https://www.instagram.com/irfanariya_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 9,
@@ -143,6 +151,7 @@ export const players = [
     height: "180.6 cm",
     weight: "66.3 kg",
     dob: "december 22",
+    instagram: "",
   },
   {
     id: 10,
@@ -156,6 +165,7 @@ export const players = [
     height: "162.8 cm",
     weight: "51.9 kg",
     dob: "june 21",
+    instagram: "https://www.instagram.com/endar.ss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 11,
@@ -169,6 +179,7 @@ export const players = [
     height: "188.3 cm",
     weight: "68.4 kg",
     dob: "september 7",
+    instagram: "https://www.instagram.com/ap_iannih?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 12,
@@ -182,6 +193,7 @@ export const players = [
     height: "179.5 cm",
     weight: "63 kg",
     dob: "november 10",
+    instagram: "",
   },
   {
     id: 14,
@@ -195,5 +207,6 @@ export const players = [
     height: "179.5 cm",
     weight: "63 kg",
     dob: "november 10",
+    instagram: "https://www.instagram.com/andikanattan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
 ];

@@ -16,6 +16,7 @@ export const staff = [
     height: "170.8 cm",
     weight: "59 kg",
     dob: "August 17",
+    instagram: "https://www.instagram.com/shoddik?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     id: 2,
@@ -28,5 +29,6 @@ export const staff = [
     height: "172.8 cm",
     weight: "62.1 kg",
     dob: "december 31",
+    instagram: "https://www.instagram.com/harry_streetfire?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
 ];

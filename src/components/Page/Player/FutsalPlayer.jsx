@@ -8,9 +8,9 @@ const FutsalPlayer = () => {
       {futsalPlayer.map((item) => {
         return (
           <div key={item.id}>
-            <Link className="flex flex-col items-center gap-2 lg:gap-4" to={`/player/futsal/${item.id}`}>
-              <img src={item.img} className="h-40 object-cover lg:h-[250px]" />
-              <h2 className="text-colorText font-semibold text-shadow-md lg:text-lg">{item.name}</h2>
+            <Link className="flex flex-col items-center gap-2 lg:gap-4" to={`/player/futsal/${item?.id}`}>
+              <img src={item?.img} className="h-40 object-cover lg:h-[250px]" />
+              <h2 className="font-semibold text-colorText text-shadow-md lg:text-lg">{item?.name}</h2>
             </Link>
           </div>
         );

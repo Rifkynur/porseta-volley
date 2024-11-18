@@ -132,16 +132,12 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink to={"/"} className={"lg:text-lg"}>
+        <li>
+          <NavLink to={"/about"} className={"lg:text-lg"}>
             Tentang
           </NavLink>
         </li>
-        <li>
-          <NavLink to={"/"} className={"lg:text-lg"}>
-            Blog
-          </NavLink>
-        </li> */}
+
         <li>
           <NavLink to={"/gallery"} className={"lg:text-lg"}>
             Gallery
