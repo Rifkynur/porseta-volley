@@ -30,7 +30,7 @@ const Navbar = () => {
           <h2 className="text-lg font-bold uppercase">porseta</h2>
         </div>
       </Link>
-      <motion.button initial={false} className="relative size-10 rounded-full bg-secondary md:hidden" animate={navbarOpen ? "open" : "closed"} onClick={() => setNavbarOpen((prev) => !prev)}>
+      <motion.button aria-label="menu" initial={false} className="relative size-10 rounded-full bg-secondary md:hidden" animate={navbarOpen ? "open" : "closed"} onClick={() => setNavbarOpen((prev) => !prev)}>
         <motion.span
           style={{
             left: "50%",

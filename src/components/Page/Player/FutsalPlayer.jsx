@@ -9,7 +9,7 @@ const FutsalPlayer = () => {
         return (
           <div key={item.id}>
             <Link className="flex flex-col items-center gap-2 lg:gap-4" to={`/player/futsal/${item?.id}`}>
-              <img src={item?.img} className="h-40 object-cover lg:h-[250px]" />
+              <img src={item?.img} className="h-40 object-cover lg:h-[250px]" alt={"futsal player"} />
               <h2 className="font-semibold text-colorText text-shadow-md lg:text-lg">{item?.name}</h2>
             </Link>
           </div>

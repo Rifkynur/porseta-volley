@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FutsalPlayer from "./FutsalPlayer";
 import VoliPlayer from "./VoliPlayer";
 
@@ -7,7 +7,17 @@ const AllPlayer = () => {
 
   const chooseSport = (number) => {
     setActiveTabs(number);
+    localStorage.setItem("activeTab", number);
   };
+
+  useEffect(() => {
+    const saveTabs = localStorage.getItem("activeTab");
+    if (saveTabs) {
+      setActiveTabs(Number(saveTabs));
+    } else {
+      localStorage.setItem("activeTab", 1);
+    }
+  }, []);
 
   return (
     <>

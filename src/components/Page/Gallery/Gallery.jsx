@@ -19,7 +19,7 @@ const Gallery = () => {
           return <img src={data?.url} key={data?.id} className="h-24 w-full cursor-pointer border object-cover shadow-md lg:h-[200px]" onClick={() => chooseImg(data)} />;
         })}
         <ModalGallery visible={visible}>
-          <button className="ms-auto lg:me-20" onClick={() => setVisible(false)}>
+          <button className="me-4 ms-auto lg:me-20" onClick={() => setVisible(false)}>
             <IoCloseCircle className="size-6 lg:size-8" />
           </button>
           <img src={singleImg?.url} alt="img" className="h-52 w-[80%] object-cover lg:h-[500px]" />
