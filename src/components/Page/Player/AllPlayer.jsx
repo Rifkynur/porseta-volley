@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import FutsalPlayer from "./FutsalPlayer";
 import VoliPlayer from "./VoliPlayer";
+import AllStaff from "../Staff/AllStaff";
 
 const AllPlayer = () => {
   const [activeTabs, setActiveTabs] = useState(1);
@@ -32,9 +33,13 @@ const AllPlayer = () => {
         <button className={`rounded-md px-3 py-1 text-sm font-bold ${activeTabs === 3 ? "text-secondary" : "text-white"}`} onClick={() => chooseSport(3)}>
           Badminton
         </button>
+        <button className={`rounded-md px-3 py-1 text-sm font-bold ${activeTabs === 4 ? "text-secondary" : "text-white"}`} onClick={() => chooseSport(4)}>
+          Staff
+        </button>
       </div>
       {activeTabs === 1 && <VoliPlayer />}
       {activeTabs === 2 && <FutsalPlayer />}
+      {activeTabs === 4 && <AllStaff />}
     </>
   );
 };

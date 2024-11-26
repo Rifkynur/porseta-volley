@@ -29,6 +29,7 @@ const App = () => {
         <Route path="/kas" element={<KasPage />} />
         <Route path="/player/:id" element={<DetailPlayerPage />} />
         <Route path="/player/futsal/:id" element={<DetailFutsalPlayerPage />} />
+        <Route path="/player/staff/:id" element={<DetailStaffPage />} />
       </Routes>
     </>
   );

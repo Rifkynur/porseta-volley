@@ -124,11 +124,6 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to={"/staff"} className={"lg:text-lg"}>
-            Staff
-          </NavLink>
-        </li>
-        <li>
           <NavLink to={"/kas"} className={"lg:text-lg"}>
             Kas
           </NavLink>
@@ -190,11 +185,7 @@ const Navbar = () => {
             Player
           </NavLink>
         </li>
-        <li>
-          <NavLink to={"/staff"} className={"lg:text-lg"}>
-            Staff
-          </NavLink>
-        </li>
+
         <li>
           <NavLink to={"/kas"} className={"lg:text-lg"}>
             Kas
