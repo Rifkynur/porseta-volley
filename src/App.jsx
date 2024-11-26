@@ -10,6 +10,8 @@ import DetailPlayerPage from "./Pages/DetailPlayerPage";
 import DetailStaffPage from "./Pages/DetailStaffPage";
 import DetailFutsalPlayerPage from "./Pages/DetailFutsalPlayerPage";
 import AboutPage from "./Pages/AboutPage";
+import BlogPage from "./Pages/BlogPage";
+import KasPage from "./Pages/KasPage";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/staff/:id" element={<DetailStaffPage />} />
         <Route path="/player" element={<PlayersPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/kas" element={<KasPage />} />
         <Route path="/player/:id" element={<DetailPlayerPage />} />
         <Route path="/player/futsal/:id" element={<DetailFutsalPlayerPage />} />
       </Routes>

@@ -1,27 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
-import Logo from "../../assets/home/logo.png";
 import Icon from "../../assets/home/icon.jpg";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-
+  const navbarRef = useRef(null);
+  const menuRef = useRef(null);
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setNavbarOpen(true);
-      } else {
+    const handleOutsideClick = (event) => {
+      if (!navbarRef.current.contains(event.target) && !menuRef.current.contains(event.target)) {
         setNavbarOpen(false);
       }
     };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("click", handleOutsideClick);
+    return () => {
+      window.removeEventListener("click", handleOutsideClick);
+    };
   }, []);
-
   return (
     <nav className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-primary p-4 text-white shadow-lg md:px-10 md:py-8">
       <Link to={"/"}>
@@ -30,7 +26,7 @@ const Navbar = () => {
           <h2 className="text-lg font-bold uppercase">porseta</h2>
         </div>
       </Link>
-      <motion.button aria-label="menu" initial={false} className="relative size-10 rounded-full bg-secondary md:hidden" animate={navbarOpen ? "open" : "closed"} onClick={() => setNavbarOpen((prev) => !prev)}>
+      <motion.button ref={menuRef} aria-label="menu" initial={false} className="relative size-10 rounded-full bg-secondary md:hidden" animate={navbarOpen ? "open" : "closed"} onClick={() => setNavbarOpen((prev) => !prev)}>
         <motion.span
           style={{
             left: "50%",
@@ -101,9 +97,51 @@ const Navbar = () => {
           }}
         />
       </motion.button>
-
+      <ul className="hidden gap-4 font-semibold md:flex">
+        <li>
+          <NavLink to={"/"} className={"lg:text-lg"}>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/about"} className={"lg:text-lg"}>
+            Tentang
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/blog"} className={"lg:text-lg"}>
+            Blog
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/gallery"} className={"lg:text-lg"}>
+            Gallery
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/player"} className={"lg:text-lg"}>
+            Player
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/staff"} className={"lg:text-lg"}>
+            Staff
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/kas"} className={"lg:text-lg"}>
+            Kas
+          </NavLink>
+        </li>
+        {/* <li>
+          <NavLink to={"/contact"} className={"lg:text-lg"}>
+            Contact
+          </NavLink>
+        </li> */}
+      </ul>
       <motion.ul
-        className={`absolute left-0 top-full flex w-full origin-top flex-col items-center justify-center gap-4 overflow-hidden bg-primary font-semibold md:relative md:h-fit md:w-fit md:flex-row md:opacity-100 lg:gap-6`}
+        ref={navbarRef}
+        className={`absolute left-0 top-full flex w-full origin-top flex-col items-center justify-center gap-4 overflow-hidden bg-primary font-semibold md:hidden`}
         animate={navbarOpen ? "open" : "closed"}
         variants={{
           open: {
@@ -137,7 +175,11 @@ const Navbar = () => {
             Tentang
           </NavLink>
         </li>
-
+        <li>
+          <NavLink to={"/blog"} className={"lg:text-lg"}>
+            Blog
+          </NavLink>
+        </li>
         <li>
           <NavLink to={"/gallery"} className={"lg:text-lg"}>
             Gallery
@@ -151,6 +193,11 @@ const Navbar = () => {
         <li>
           <NavLink to={"/staff"} className={"lg:text-lg"}>
             Staff
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={"/kas"} className={"lg:text-lg"}>
+            Kas
           </NavLink>
         </li>
         <li>
