@@ -4,7 +4,6 @@ import Navbar from "./components/global/Navbar";
 import HomePage from "./Pages/HomePage";
 import ContactPage from "./Pages/ContactPage";
 import GalleryPage from "./Pages/GalleryPage";
-import StaffPage from "./Pages/StaffPage";
 import PlayersPage from "./Pages/PlayersPage";
 import DetailPlayerPage from "./Pages/DetailPlayerPage";
 import DetailStaffPage from "./Pages/DetailStaffPage";
